@@ -21,13 +21,13 @@ The PIRM-SR challenge will compare and rank <b>perceptual</b> single-image super
 ### The Task
 4x super-resolution of images which were down-sampled with a bicubic kernel.
 ### Evaluation
-The perception-distortion plane will be divided into three regions defined by thresholds on the MSE. In each region, the winning algorithm is the one that achieves the best perceptual quality as quantified by the recent metric of <a href="https://sites.google.com/site/chaoma99/sr-metric" target="_blank">[Ma et al.]</a>.
+The perception-distortion plane will be divided into three regions defined by thresholds on the MSE. In each region, the winning algorithm is the one that achieves the best perceptual quality as quantified by the recent metric of [Ma et al.](https://sites.google.com/site/chaoma99/sr-metric).
 <div align='center'>
   <img src="img/regions.svg" height="200px">
 </div>
-See <a href="https://arxiv.org/abs/1711.06077" target="_blank">[Blau and Michaeli, CVPR'18]</a> for an explanation of the rationale behind this evaluation method.
+See [Blau and Michaeli, CVPR'18](https://arxiv.org/abs/1711.06077) for an explanation of the rationale behind this evaluation method.
 ### Regions
-The three regions are defined by
+The three regions are defined by:
 Region 1: TBD
 Region 2: TBD
 Region 3: TBD
