@@ -1,2 +1,8 @@
 # PIRM2018
 Workshop and Challenge on  Perceptual Image Restoration  and Manipulation
+
+## The Workshop
+A key goal in image restoration, manipulation and generation, is to produce images that are visually appealing to human observers. In recent years, there has been great interest as well as significant progress in perceptually-aware computer vision algorithms. However, many works have observed a fundamental disagreement between this recent leap in performance, as evaluated by human observers, and the objective assessment of these methods by common evaluation metrics (e.g. PSNR, SSIM). This workshop will revolve around two main themes: (i) How to design algorithms which satisfy human observers, and (ii) How to evaluate the perceptual quality of such algorithms.
+
+## The Challenges
+The PIRM challenges will promote <i>perceptual</i> image restoration. State-of-the-art methods in terms of perceptual quality (e.g. <a href="https://arxiv.org/abs/1609.04802" target="_blank">SRGAN</a>) are rated poorly by "simple" distortion measures such as PSNR and SSIM. Therefore, in contrast to previous challenges, the evaluation and ranking will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/abs/1711.06077" target="_blank">[Blau and Michaeli, CVPR'18]</a>. This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization.<br><br><!-- Prizes will be awarded to the challenge winners. In addition, c--> Challenge participants may submit papers for the ECCV workshop proceedings. Papers will be accepted based on: (i) academic quality, and (ii) challenge ranking.
