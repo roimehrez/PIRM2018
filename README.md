@@ -32,8 +32,8 @@ Region 1: TBD
 Region 2: TBD
 Region 3: TBD
 ### Data for evalutaion
-Algorithms will be evaluated on a set of 100 images. The validation and self-validation set can be downloaded [here](https://www.pirm2018.org/PIRM-SR.html#dates).
+Algorithms will be evaluated on a set of 100 images. The validation and self-validation set can be downloaded [here](https://www.pirm2018.org/PIRM-SR.html).
 ### Submission
-Submit your results on the validation set to see your ranking on the <a href="#leaderboard">leaderboard</a>. After <a href="https://www.pirm2018.org/PIRM-SR.html#register">registering</a>, you will receive submission instructions. During the validation phase (until July 17<sup>th</sup>), each group is limited to 20 validation submissions in total.
+Submit your results on the validation set to see your ranking on the leaderboard. After [registering](https://www.pirm2018.org/PIRM-SR.html), you will receive submission instructions. During the validation phase (until July 17<sup>th</sup>), each group is limited to 20 validation submissions in total.
 ### Self validation
 Evaluate your results on your own with the self-validation set and code found in this repository. These are not the validation images, but have an equal distribution of scenes, quality etc.
