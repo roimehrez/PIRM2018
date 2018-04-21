@@ -46,14 +46,8 @@ This package plots image restoration algorithms on the Perception-Distortion pla
 "The Perception-Distortion Tradeoff", Yochai Blau and Tomer Michaeli, CVPR, 2018.
 
 ### Quick Start
-Two Matlab scripts are included:
-
-1) ```plot_your_alg_BSD100_4x.m```:
-   Plot your super-resolution algorithm on the Perception-Distortion plane (see figs. 8,10 in
-   the paper), along with 16 existing super-resolution algorithms, tested on the BSD100
-   dataset after 4x downsampling with a bicubic kernel.
-
-2) ```lot_set_of_algs.m```:
+Main Matlab scripts is included:
+```lot_set_of_algs.m```:
    Plot a set of image restoration algorithms on the Perception-Distortion plane. This script
    can be used for an image restoration task and dataset of your choice.
    * You will need the outputs of all algorithms you wish to plot, as we only supply
@@ -67,22 +61,6 @@ toolbox. If so:
 2) copy the generated MEX files into the parent directory ```IQA_algs\matlabPyrTools-master```
 
 ### Contents
-
-The package comprises these main functions
-
-*) ```plot_your_alg_BSD100_4x.m```:
-
-   - Description: Plots your super-resolution algorithm on the Perception-Distortion plane,
-        along with 16 existing super-resolution algorithms, tested on the BSD100 dataset after
-        4x downsampling with a bicubic kernel. 
-   
-   - Instructions:
-        1) Place the outputs of your algorithm (100 images) in the directory ```Input_BSD100```.
-           The file names must match the original file names (see ```utils\BSD100_original```).
-        2) Choose a no-reference metric in line 10 of the script.
-           Must be one of ```{'Ma','BRISQUE','NIQE'}```. Default is ```'Ma'```.
-        3) Run the script.
-
 
 *) ```plot_set_of_algs.m```:
 
@@ -111,49 +89,19 @@ The package comprises these main functions
 The following packages are included in the ```IQA_algs``` directory, along with the original 
 ReadMe and License files:
 
-- No-reference metric for SR by Ma et al.
-  Webpage: https://sites.google.com/site/chaoma99/sr-metric
+- No-reference metric for SR by Ma et al. [Webpage](https://sites.google.com/site/chaoma99/sr-metric)
   Citation: "Learning a No-Reference Quality Metric for Single-Image Super-Resolution"
             Chao Ma, Chih-Yuan Yang, Xiaokang Yang, Ming-Hsuan Yang 
             Computer Vision and Image Understanding (CVIU), 2017
-- BRISQUE
-  Webpage: http://live.ece.utexas.edu/research/Quality/index.htm
-  Citation: “No-Reference Image Quality Assessment in the Spatial Domain”
-            A. Mittal, A. K. Moorthy and A. C. Bovik, 
-            IEEE Transactions on Image Processing , 2012
-- NIQE
-  Webpage: http://live.ece.utexas.edu/research/Quality/index.htm
-  Citation: “Making a Completely Blind Image Quality Analyzer”
-            A. Mittal, R. Soundararajan and A. C. Bovik
-            IEEE Signal Processing Letters , pp. 209-212, vol. 22, no. 3, March 2013.
-- SSIM
-  Webpage: https://ece.uwaterloo.ca/~z70wang/research/ssim/index.html
+- SSIM  [Webpage](https://ece.uwaterloo.ca/~z70wang/research/ssim/index.html)
   Citation: "Image quality assessment: From error visibility to structural similarity"
             Z. Wang, A. C. Bovik, H. R. Sheikh and E. P. Simoncelli
             IEEE Transactions on Image Processing, vol. 13, no. 4, pp. 600-612, Apr. 2004.
-- MS-SSIM
-  Webpage: http://live.ece.utexas.edu/research/Quality/index.htm
+- MS-SSIM [Webpage](http://live.ece.utexas.edu/research/Quality/index.htm)
   Citation: "Multi-scale structural similarity for image quality assessment"
             Z. Wang, E. P. Simoncelli and A. C. Bovik
             IEEE Asilomar Conference Signals, Systems and Computers , Nov. 2003.
-- IFC
-  Webpage: http://live.ece.utexas.edu/research/Quality/index.htm
-  Citation: "An information fidelity criterion for image quality assessment using natural scene statistics"
-            H.R. Sheikh, A.C. Bovik and G. de Veciana
-            IEEE Transactions on Image Processing , vol.14, no.12pp. 2117- 2128, Dec. 2005.
-- VIF
-  Webpage: http://live.ece.utexas.edu/research/Quality/index.htm
-  Citation: "Image information and visual quality"
-            H.R. Sheikh.and A.C. Bovik
-            IEEE Transactions on Image Processing , vol.15, no.2,pp. 430- 444, Feb. 2006.
--matlabPyrTools
-  Webpage: https://github.com/LabForComputationalVision/matlabPyrTools
--BSD100 dataset
-  Webpage: https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/
-  Citation: "A Database of Human Segmented Natural Images and its Application to Evaluating
-            Segmentation Algorithms and Measuring Ecological Statistics"
-            D. Martin and C. Fowlkes and D. Tal and J. Malik
-            Proc. 8th Int'l Conf. Computer Vision, vol.2, pp. 416-423, Jul. 2001.
+-matlabPyrTools [Webpage](https://github.com/LabForComputationalVision/matlabPyrTools)
 
 ### Citation
    
