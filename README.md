@@ -1,4 +1,4 @@
-# PIRM2018 - Workshop and Challenge on  Perceptual Image Restoration  and Manipulation
+# [PIRM2018 - Workshop and Challenge on  Perceptual Image Restoration  and Manipulation](https://www.pirm2018.org/)
 
 ## The Workshop
 A key goal in image restoration, manipulation and generation, is to produce images that are visually appealing to human observers. In recent years, there has been great interest as well as significant progress in perceptually-aware computer vision algorithms. However, many works have observed a fundamental disagreement between this recent leap in performance, as evaluated by human observers, and the objective assessment of these methods by common evaluation metrics (e.g. PSNR, SSIM). This workshop will revolve around two main themes: (i) How to design algorithms which satisfy human observers, and (ii) How to evaluate the perceptual quality of such algorithms.
@@ -6,5 +6,16 @@ A key goal in image restoration, manipulation and generation, is to produce imag
 ## The Challenges
 The PIRM challenges will promote <i>perceptual</i> image restoration. State-of-the-art methods in terms of perceptual quality (e.g. <a href="https://arxiv.org/abs/1609.04802" target="_blank">SRGAN</a>) are rated poorly by "simple" distortion measures such as PSNR and SSIM. Therefore, in contrast to previous challenges, the evaluation and ranking will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/abs/1711.06077" target="_blank">[Blau and Michaeli, CVPR'18]</a>. This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization.<br><br><!-- Prizes will be awarded to the challenge winners. In addition, c--> Challenge participants may submit papers for the ECCV workshop proceedings. Papers will be accepted based on: (i) academic quality, and (ii) challenge ranking.
 
-## The PIRM challenge on <text style="font-weight:400; color:#E00A80">perceptual</text> super resolution
+## [The PIRM challenge on perceptual super resolution](https://www.pirm2018.org/PIRM-SR.html)
 Single-image super-resolution has gained much attention in recent years. The appearance of deep neural-net based methods and the great advancement in generative modeling (e.g. GANs) has facilitated a major performance leap. One of the ultimate goals in super-resolution is to produce outputs with high visual quality, as perceived by human observers. However, many works have observed a fundamental disagreement between this recent leap in performance, as quantified by common evaluation metrics (PSNR, SSIM), and the subjective evaluation of human observers (reported e.g. in the <a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank">SRGAN</a> and <a href="https://arxiv.org/pdf/1612.07919.pdf" target="_blank">EnhanceNet</a> papers).
+
+<div align='center'>
+  <img src="img/church.svg" height="200px">
+</div>
+
+This observation caused the formation of two distinct research directions. The first is aimed at improving the performance according to conventional evaluation metrics (e.g. PSNR), which frequently produce visually unpleasing results. The second, targets high perceptual quality, which commonly performs poorly according to conventional metrics. Previous benchmarks and challenges are mostly relevant for the first line of works.
+
+
+<div align='center'>
+  <img src="img/church.svg" height="200px">
+</div>
