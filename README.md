@@ -17,5 +17,16 @@ This observation caused the formation of two distinct research directions. The f
 
 
 <div align='center'>
-  <img src="img/church.svg" height="200px">
+  <img src="img/PD_plot.svg" height="200px">
+</div>
+
+The PIRM-SR challenge will compare and rank <b>perceptual</b> single-image super-resolution. In contrast to previous challenges, the evaluation will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/pdf/1711.06077.pdf" target="_blank">[Blau and Michaeli, CVPR'18]</a>, and not based solely on distortion measurement (e.g. PSNR/SSIM). This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization. <br><br><small>* References for the methods appearing in the figures above can be found in this <a href="https://arxiv.org/pdf/1711.06077.pdf" target="_blank">paper</a>
+  
+## The Task
+4x super-resolution of images which were down-sampled with a bicubic kernel.
+## Evaluation
+The perception-distortion plane will be divided into three regions defined by thresholds on the MSE. In each region, the winning algorithm is the one that achieves the best perceptual quality as quantified by the recent metric of <a href="https://sites.google.com/site/chaoma99/sr-metric" target="_blank">[Ma et al.]</a>.
+
+<div align='center'>
+  <img src="img/regions.svg" height="200px">
 </div>
