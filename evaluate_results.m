@@ -5,7 +5,7 @@
 input_dir = fullfile(pwd,'your_results');
 
 % Directory with ground truth images
-GD_dir = fullfile(pwd,'utils','ground_truth');
+GD_dir = fullfile(pwd,'self_validation_HR');
 
 % Number of pixels to shave off image borders when calcualting scores
 shave_width = 4;
