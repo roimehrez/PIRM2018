@@ -13,15 +13,13 @@ This Matlab code computes the mean MSE and Ma et al. scores</a> for your methods
 
 ### Troubleshooting
 Depending on your operating system, you may need the recompile the MEX files in the matlabPyrTools toolbox. If so:
-1. Run ```utils/Ma_et_al_code/sr-metric-master/external/matlabPyrTools/MEX/compilePyrTools.m```
-2. Copy the generated MEX files into the parent directory ```utils/Ma_et_al_code/sr-metric-master/external/matlabPyrTools```
+1. Run ```utils/sr-metric-master/external/matlabPyrTools/MEX/compilePyrTools.m```
+2. Copy the generated MEX files into the parent directory ```utils/sr-metric-master/external/matlabPyrTools```
 
 ### Dependencies
-- No-reference metric for SR by Ma et al. [Webpage](https://sites.google.com/site/chaoma99/sr-metric)
-  Citation: "Learning a No-Reference Quality Metric for Single-Image Super-Resolution"
-            Chao Ma, Chih-Yuan Yang, Xiaokang Yang, Ming-Hsuan Yang 
-            Computer Vision and Image Understanding (CVIU), 2017
+- [No-reference metric for SR by Ma et al](https://sites.google.com/site/chaoma99/sr-metric)
+- [MatlabPyrTools](https://github.com/LabForComputationalVision/matlabPyrTools)
 
 
-This code is distributed only for academic research purposes only.
-For other purposes, please contact Roey Mechrez: roey (at) campus.technion.ac.il
+<br>This code is distributed only for academic research purposes only.
+<br>For other purposes, please contact Roey Mechrez: roey (at) campus.technion.ac.il
