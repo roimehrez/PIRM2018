@@ -18,7 +18,6 @@ Depending on your operating system, you may need the recompile the MEX files in 
 
 ### Dependencies
 - [No-reference metric for SR by Ma et al](https://sites.google.com/site/chaoma99/sr-metric)
-- [MatlabPyrTools](https://github.com/LabForComputationalVision/matlabPyrTools)
 
 
 <br>This code is distributed only for academic research purposes only.
