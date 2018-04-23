@@ -7,7 +7,7 @@ For further details see the <a href="https://www.pirm2018.org/PIRM-SR.html" targ
 This Matlab code computes the MSE and Ma scores for your methods outputs on the self-validation set.
 
 ### Quick Start
-1. Create a directory named ```your_results``` and copy your outputs into it.
+1. Create a directory named ```your_results``` in the base directory and copy your outputs into it.
 2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils``` directory.
 3. Run the ```evaluate_results.m``` script.
 
