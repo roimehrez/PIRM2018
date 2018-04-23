@@ -17,7 +17,7 @@ Depending on your operating system, you may need the recompile the MEX files in 
 2. Copy the generated MEX files into the parent directory ```utils/sr-metric-master/external/matlabPyrTools```
 
 ### Dependencies
-- [No-reference metric for SR by Ma et al](https://sites.google.com/site/chaoma99/sr-metric)
+- [No-reference metric for SR by Ma et al.](https://sites.google.com/site/chaoma99/sr-metric)
 
 
 <br>This code is distributed only for academic research purposes only.
