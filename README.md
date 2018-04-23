@@ -4,7 +4,7 @@ The PIRM-SR Challenge will compare and rank methods for <b>perceptual</b> single
 For further details see the <a href="https://www.pirm2018.org/PIRM-SR.html" target="_blank">challenge website</a>.
 
 ##  Self-validation Code
-This Matlab code computes the mean MSE and Ma et al. scores</a> for your methods outputs on the self-validation set.
+This Matlab code computes the mean MSE and Ma scores for your methods outputs on the self-validation set.
 
 ### Quick Start
 1. Create a directory named ```your_results``` and copy your outputs into it.
