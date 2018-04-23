@@ -1,6 +1,6 @@
 function scores = calc_scores(input_dir,GD_dir,shave_width,verbose)
 
-addpath(genpath(fullfile(pwd,'utils','Ma_et_al_code')));
+addpath(genpath(fullfile(pwd,'utils')));
 
 %% Reading file list
 file_list = dir(input_dir);
