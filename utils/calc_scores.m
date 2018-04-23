@@ -1,4 +1,4 @@
-function scores = calc_scores(input_dir,GD_dir,shave_width,verbose)
+function scores = calc_scores(input_dir,GT_dir,shave_width,verbose)
 
 addpath(genpath(fullfile(pwd,'utils')));
 
@@ -18,7 +18,7 @@ for ii=1:im_num
     % Reading and converting images
     input_image_path = fullfile(input_dir,file_list(ii).name);
     input_image = convert_shave_image(imread(input_image_path),shave_width);
-    GD_image_path = fullfile(GD_dir,file_list(ii).name);
+    GD_image_path = fullfile(GT_dir,file_list(ii).name);
     GD_image = convert_shave_image(imread(GD_image_path),shave_width);
     
     % Calculating scores
