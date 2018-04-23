@@ -8,7 +8,7 @@ This Matlab code computes the MSE and Ma scores for your methods outputs on the 
 
 ### Quick Start
 1. Copy your outputs into ```your_results``` folder in the base directory.
-2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils/Ma_et_al_code``` folder.
+2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils``` folder.
 3. Run the ```evaluate_results.m``` script.
 
 ### Troubleshooting
