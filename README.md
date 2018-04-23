@@ -1,116 +1,27 @@
-# [PIRM2018 - Workshop and Challenge on  Perceptual Image Restoration  and Manipulation](https://www.pirm2018.org/)
+# [The PIRM Challenge on Perceptual Super-Resolution](https://www.pirm2018.org/PIRM-SR.html)
+The PIRM-SR Challenge will compare and rank methods for <b>perceptual</b> single-image super-resolution. State-of-the-art methods in terms of perceptual quality (e.g. <a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank">SRGAN</a>) are rated poorly by "simple" distortion measures such as PSNR and SSIM. Therefore, in contrast to previous challenges, the evaluation and ranking will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/pdf/1711.06077.pdf" target="_blank">[Blau and Michaeli, CVPR'18]</a>. This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization.
 
-## The Workshop
-A key goal in image restoration, manipulation and generation, is to produce images that are visually appealing to human observers. In recent years, there has been great interest as well as significant progress in perceptually-aware computer vision algorithms. However, many works have observed a fundamental disagreement between this recent leap in performance, as evaluated by human observers, and the objective assessment of these methods by common evaluation metrics (e.g. PSNR, SSIM). This workshop will revolve around two main themes: (i) How to design algorithms which satisfy human observers, and (ii) How to evaluate the perceptual quality of such algorithms.
+For further details see the <a href="https://www.pirm2018.org/PIRM-SR.html" target="_blank">challenge website</a>.
 
-## The Challenges
-The PIRM challenges will promote <i>perceptual</i> image restoration. State-of-the-art methods in terms of perceptual quality (e.g. <a href="https://arxiv.org/abs/1609.04802" target="_blank">SRGAN</a>) are rated poorly by "simple" distortion measures such as PSNR and SSIM. Therefore, in contrast to previous challenges, the evaluation and ranking will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/abs/1711.06077" target="_blank">[Blau and Michaeli, CVPR'18]</a>. This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization.<br><br><!-- Prizes will be awarded to the challenge winners. In addition, c--> Challenge participants may submit papers for the ECCV workshop proceedings. Papers will be accepted based on: (i) academic quality, and (ii) challenge ranking.
-
-## [The PIRM challenge on perceptual super resolution](https://www.pirm2018.org/PIRM-SR.html)
-Single-image super-resolution has gained much attention in recent years. The appearance of deep neural-net based methods and the great advancement in generative modeling (e.g. GANs) has facilitated a major performance leap. One of the ultimate goals in super-resolution is to produce outputs with high visual quality, as perceived by human observers. However, many works have observed a fundamental disagreement between this recent leap in performance, as quantified by common evaluation metrics (PSNR, SSIM), and the subjective evaluation of human observers (reported e.g. in the <a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank">SRGAN</a> and <a href="https://arxiv.org/pdf/1612.07919.pdf" target="_blank">EnhanceNet</a> papers).
-<div align='center'>
-  <img src="img/church.svg" height="200px">
-</div>
-This observation caused the formation of two distinct research directions. The first is aimed at improving the performance according to conventional evaluation metrics (e.g. PSNR), which frequently produce visually unpleasing results. The second, targets high perceptual quality, which commonly performs poorly according to conventional metrics. Previous benchmarks and challenges are mostly relevant for the first line of works.
-<div align='center'>
-  <img src="img/PD_plot.svg" height="200px">
-</div>
-The PIRM-SR challenge will compare and rank <b>perceptual</b> single-image super-resolution. In contrast to previous challenges, the evaluation will be done in a perceptual-quality aware manner based on <a href="https://arxiv.org/pdf/1711.06077.pdf" target="_blank">[Blau and Michaeli, CVPR'18]</a>, and not based solely on distortion measurement (e.g. PSNR/SSIM). This unified approach quantifies the accuracy and perceptual quality of algorithms jointly, and will enable perceptual-driven methods to compete alongside algorithms that target PSNR maximization. <br><br><small>* References for the methods appearing in the figures above can be found in this <a href="https://arxiv.org/pdf/1711.06077.pdf" target="_blank">paper</a>
-
-## Task and Evaluation
-### The Task
-4x super-resolution of images which were down-sampled with a bicubic kernel.
-### Evaluation
-The perception-distortion plane will be divided into three regions defined by thresholds on the MSE. In each region, the winning algorithm is the one that achieves the best perceptual quality as quantified by the recent metric of [Ma et al.](https://sites.google.com/site/chaoma99/sr-metric).
-
-<div align='center'>
-  <img src="img/regions.svg" height="200px">
-</div>
-
-See [Blau and Michaeli,CVPR'18](https://arxiv.org/abs/1711.06077) for an explanation of the rationale behind this evaluation method.
-
-### Regions
-The three regions are defined by:
-Region 1: TBD
-Region 2: TBD
-Region 3: TBD
-### Data for evalutaion
-Algorithms will be evaluated on a set of 100 images. The validation and self-validation set can be downloaded [here](https://www.pirm2018.org/PIRM-SR.html).
-### Submission
-Submit your results on the validation set to see your ranking on the leaderboard. After [registering](https://www.pirm2018.org/PIRM-SR.html), you will receive submission instructions. During the validation phase (until July 17<sup>th</sup>), each group is limited to 20 validation submissions in total.
-### Self validation
-Evaluate your results on your own with the self-validation set and code found in this repository. These are not the validation images, but have an equal distribution of scenes, quality etc.
-
-## Using the Validation Code
-This package plots image restoration algorithms on the Perception-Distortion plane, as described in:
-"The Perception-Distortion Tradeoff", Yochai Blau and Tomer Michaeli, CVPR, 2018.
+##  Self-validation Code
+This Matlab code computes the mean MSE and Ma et al. scores</a> for your methods outputs on the self-validation set.
 
 ### Quick Start
-Main Matlab scripts is included:
-```lot_set_of_algs.m```:
-   Plot a set of image restoration algorithms on the Perception-Distortion plane. This script
-   can be used for an image restoration task and dataset of your choice.
-   * You will need the outputs of all algorithms you wish to plot, as we only supply
-   precomputed IQA scores for the scenario described for the first script.
+1. Create a directory named ```your_results``` and copy your outputs into it.
+2. Download the <a href="https://github.com/chaoma99/sr-metric" target="_blank">Ma et al. code, and extract it into the ```utils/Ma_et_al_code``` directory.
+3. Run the ```evaluate_results.m``` script.
 
-### First step
-
-Before running the scripts, you may need the recompile the MEX files in the matlabPyrTools
-toolbox. If so:
-1) run ```IQA_algs\matlabPyrTools-master\MEX\compilePyrTools.m```
-2) copy the generated MEX files into the parent directory ```IQA_algs\matlabPyrTools-master```
-
-### Contents
-
-*) ```plot_set_of_algs.m```:
-
-   - Description: Plot a set of image restoration algorithms on the Perception-Distortion
-        plane.
-   
-   - Instructions:
-        1) Place the original "ground truth" images in the 'Input_set_original' directory.
-        2) Place the algorithms' outputs in the 'Input_set' directory. Each algorithm's
-           outputs should be in a separate subdirectory (the subdirectory name should be
-           the algorithm name). The file names in each subdirectory must match the original
-           file names.
-        2) Choose a no-reference metric in line 10 of the script.
-           Must be one of ```{'Ma','BRISQUE','NIQE'}```. Default is ```'NIQE'```.
-        3) Run the script.
-
-   - Comments:
-        1) The generated plots will accurately depict the Perception-Distortion plane, only
-           if the no-reference measure is highly-correlated with human-opinion-scores in the
-           tested scenario. The included no-reference scores are suited for the scenario
-           used in the first script (see paper for more details). Note that this may not
-           be the case for all scenarios / datasets.
+### Troubleshooting
+Depending on your operating system, you may need the recompile the MEX files in the matlabPyrTools toolbox. If so:
+1. Run ```utils/Ma_et_al_code/sr-metric-master/external/matlabPyrTools/MEX/compilePyrTools.m```
+2. Copy the generated MEX files into the parent directory ```utils/Ma_et_al_code/sr-metric-master/external/matlabPyrTools```
 
 ### Dependencies
-
-The following packages are included in the ```IQA_algs``` directory, along with the original 
-ReadMe and License files:
-
 - No-reference metric for SR by Ma et al. [Webpage](https://sites.google.com/site/chaoma99/sr-metric)
   Citation: "Learning a No-Reference Quality Metric for Single-Image Super-Resolution"
             Chao Ma, Chih-Yuan Yang, Xiaokang Yang, Ming-Hsuan Yang 
             Computer Vision and Image Understanding (CVIU), 2017
-- SSIM  [Webpage](https://ece.uwaterloo.ca/~z70wang/research/ssim/index.html)
-  Citation: "Image quality assessment: From error visibility to structural similarity"
-            Z. Wang, A. C. Bovik, H. R. Sheikh and E. P. Simoncelli
-            IEEE Transactions on Image Processing, vol. 13, no. 4, pp. 600-612, Apr. 2004.
-- MS-SSIM [Webpage](http://live.ece.utexas.edu/research/Quality/index.htm)
-  Citation: "Multi-scale structural similarity for image quality assessment"
-            Z. Wang, E. P. Simoncelli and A. C. Bovik
-            IEEE Asilomar Conference Signals, Systems and Computers , Nov. 2003.
--matlabPyrTools [Webpage](https://github.com/LabForComputationalVision/matlabPyrTools)
 
-### Citation
-   
-If you use this code in a scientific project, you should cite the following paper in any
-resulting publication:
 
-Yochai Blau and Tomer Michaeli, "The Perception-Distortion Tradeoff",
-Conference on Computer Vision and Pattern Recognition (CVPR), 2018.
-
-This code is distributed only for academic research purposes.
-For other purposes, please contact Tomer Michaeli: tomer.m@ee.technion.ac.il
-
+This code is distributed only for academic research purposes only.
+For other purposes, please contact Roey Mechrez: roey (at) campus.technion.ac.il
