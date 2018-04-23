@@ -8,7 +8,7 @@ This Matlab code computes the mean MSE and Ma et al. scores</a> for your methods
 
 ### Quick Start
 1. Create a directory named ```your_results``` and copy your outputs into it.
-2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils/Ma_et_al_code``` directory.
+2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils``` directory.
 3. Run the ```evaluate_results.m``` script.
 
 ### Troubleshooting
