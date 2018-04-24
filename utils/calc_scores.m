@@ -4,7 +4,6 @@ addpath(genpath(fullfile(pwd,'utils')));
 
 %% Reading file list
 file_list = dir([input_dir,'/*.png']);
-file_list(1:2,:) = [];
 im_num = length(file_list);
 
 %% Calculating scores
