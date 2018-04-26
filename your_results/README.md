@@ -1,1 +1,1 @@
-## Your results (HR) images of the Self_Validation set should be located here
+## Your results (HR images) on the self-validation set should be located here
