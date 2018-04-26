@@ -8,8 +8,9 @@ This Matlab code computes the MSE and Ma scores for your methods outputs on the 
 
 ### Quick Start
 1. Copy your outputs into the ```your_results``` folder in the base directory.
-2. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils/sr-metric-master``` folder.
-3. Run the ```evaluate_results.m``` script.
+2. Copy the [self-validation set](https://www.pirm2018.org/PIRM-SR.html#data) (HR images only) into the ```self_validation_HR``` folder.
+3. Download the [Ma et al. code](https://github.com/chaoma99/sr-metric), and extract it into the ```utils/sr-metric-master``` folder.
+4. Run the ```evaluate_results.m``` script.
 
 ### Troubleshooting
 Depending on your operating system, you may need the recompile the MEX files in the matlabPyrTools toolbox. If so:
