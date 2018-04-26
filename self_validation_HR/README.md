@@ -1,1 +1,1 @@
-## The ground truth (HR) images of the Self_Validation set should be located here
+## The self-validation ground truth (HR) images should be located here.
