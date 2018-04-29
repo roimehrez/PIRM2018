@@ -21,5 +21,5 @@ scores = calc_scores(input_dir,GT_dir,shave_width,verbose);
 save('your_scores.mat','scores');
 
 %% Printing results
-fprintf(['Your Ma score is: ',num2str(mean([scores.Ma]))]);
-fprintf(['Your RMSE is: ',num2str(sqrt(mean([scores.MSE])))]);
+fprintf(['\n\nYour Ma score is: ',num2str(mean([scores.Ma]))]);
+fprintf(['\nYour RMSE is: ',num2str(sqrt(mean([scores.MSE])))]);
