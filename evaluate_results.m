@@ -21,5 +21,6 @@ scores = calc_scores(input_dir,GT_dir,shave_width,verbose);
 save('your_scores.mat','scores');
 
 %% Printing results
-fprintf(['\n\nYour Ma score is: ',num2str(mean([scores.Ma]))]);
-fprintf(['\nYour RMSE is: ',num2str(sqrt(mean([scores.MSE])))]);
+perceptual_score = (mean([scores.NIQE]) + (10 - mean([scores.Ma]))) / 2;
+fprintf(['\n\nYour perceptual score is: ',num2str(perceptual_score)]);
+fprintf(['\nYour RMSE is: ',num2str(sqrt(mean([scores.MSE]))),'\n']);
