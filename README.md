@@ -19,6 +19,7 @@ Depending on your operating system, you may need the recompile the MEX files in 
 
 ### Dependencies
 - [No-reference metric for SR by Ma et al.](https://sites.google.com/site/chaoma99/sr-metric)
+- [NIQE no-reference metric by Mittal et al.](https://doi.org/10.1109/LSP.2012.2227726)
 
 
 <br>This code is distributed only for academic research purposes only.
