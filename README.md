@@ -4,7 +4,7 @@ The PIRM-SR Challenge will compare and rank methods for <b>perceptual</b> single
 For further details see the [challenge website](https://www.pirm2018.org/PIRM-SR.html).
 
 ##  Self-validation Code
-This Matlab code computes the RMSE and perceptual scores for your methods outputs on the self-validation set.
+This Matlab code computes the RMSE and perceptual scores for your method's outputs on the self-validation set.
 
 ### Quick Start
 1. Copy your outputs into the ```your_results``` folder in the base directory.
