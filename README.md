@@ -17,6 +17,9 @@ Depending on your operating system, you may need the recompile the MEX files in 
 1. Run ```utils/sr-metric-master/external/matlabPyrTools/MEX/compilePyrTools.m```
 2. Copy the generated MEX files into the parent directory ```utils/sr-metric-master/external/matlabPyrTools```
 
+Note: in Linux or OS you should also change line 82 in ```mex_regressionRF_predict.cpp``` to: ```plhs[0]=mxCreateNumericMatrix(n_size,1,mxDOUBLE_CLASS,mxREAL);``` 
+Pre-compile mex files (for OS, Linux and Win) are also available in this [link ](https://www.dropbox.com/s/edm76nhxhiouezu/RF_Reg_C.zip?dl=0)(Thank you [Muhammad Haris](https://github.com/alterzero) for the solution).
+
 ### Dependencies
 - [No-reference metric for SR by Ma et al.](https://sites.google.com/site/chaoma99/sr-metric)
 - [NIQE no-reference metric by Mittal et al.](https://doi.org/10.1109/LSP.2012.2227726)
